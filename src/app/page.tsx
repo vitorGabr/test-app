@@ -1,4 +1,4 @@
-'use cache'
+export const revalidate = false;
 
 export default async function Home() {
 
