@@ -1,3 +1,5 @@
+'use cache'
+
 export default function Home() {
 
   const randomNum = Math.floor(Math.random() * 1000);
