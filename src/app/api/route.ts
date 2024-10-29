@@ -1,6 +1,6 @@
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 
 export function GET(){
-    revalidatePath('/')
+    revalidateTag('hello-world');
     return Response.json({message: 'Hello World!'});
 }

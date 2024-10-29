@@ -1,5 +1,7 @@
-export const revalidate = false;
+"use cache"
+import { unstable_cacheTag as cacheTag } from 'next/cache';
 
+cacheTag('hello-world');
 export default async function Home() {
 
   const randomNum = Math.floor(Math.random() * 1000);
