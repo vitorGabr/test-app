@@ -1,4 +1,7 @@
 "use cache"
+import { unstable_cacheLife as cacheLife } from 'next/cache'
+cacheLife('max')
+
 export default async function Home() {
   const randomNum = Math.floor(Math.random() * 1000);
 
